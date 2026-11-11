@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Venuely – book venues without clashes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind via the Play CDN keeps setup zero-config for a course project. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['Manrope', 'sans-serif'] },
+      colors: { paper: '#f2f4f1', ink: '#14201b', pine: { DEFAULT: '#0e5a4a', dark: '#0a4036', soft: '#dcebe6' }, brass: '#b7791f', danger: '#b3261e' }
+    } } };
+  </script>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
